@@ -1,0 +1,16 @@
+{
+    "compilerOptions": {
+        "outDir": "dist",
+        "moduleResolution": "node",
+        "module": "esnext",
+        "jsx": "react",
+        "jsxFactory": "h",
+        "sourceMap": true,
+        "target": "esnext"
+    },
+    "include": [
+        "serve/interfaces.ts",
+        "src/**.ts",
+        "src/**.tsx"
+    ]
+}

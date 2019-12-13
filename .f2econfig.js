@@ -1,8 +1,12 @@
+// @ts-check
 const { argv } = process
 const build = argv[argv.length - 1] === 'build'
 const { join } = require('path')
 
-module.exports = {
+/**
+ * @type {import('f2e-server').F2EConfig}
+ */
+const config = {
     livereload: !build,
     build,
     gzip: true,
@@ -23,3 +27,5 @@ module.exports = {
     ],
     output: join(__dirname, './output')
 }
+
+module.exports = config
